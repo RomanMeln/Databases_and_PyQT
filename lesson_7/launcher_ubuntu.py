@@ -45,3 +45,6 @@ while True:
         while process:
             victim = process.pop()
             os.killpg(victim.pid, signal.SIGINT)
+
+if __name__ == '__main__':
+    main()
